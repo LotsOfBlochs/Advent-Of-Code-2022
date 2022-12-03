@@ -1,5 +1,4 @@
 #include <fstream>
-#include <math.h>
 #include <string>
 #include <iostream>
 
@@ -18,7 +17,7 @@ int main(int argc, char const *argv[])
 	for(std::string str; getline(stream, str);){
 		char opponent = (str.at(0) - 'A');
 		char me = (str.at(2) - 'X');
-		
+
 		totalScore += me + 1;
 		if(opponent == me)
 			totalScore += 3;
